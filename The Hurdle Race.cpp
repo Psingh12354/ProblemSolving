@@ -6,9 +6,8 @@ vector<string> split_string(string);
 
 // Complete the hurdleRace function below.
 int hurdleRace(int k, vector<int> height) {
-    int n=sizeof(height)/sizeof(height[0]);
     int max =height[0] ;
-    for (int i = 0; i < n/2; i++) 
+    for (int i = 0; i <height.size(); i++) 
         if (height[i] > max) max = height[i];
     return (max < k) ? 0 : max-k;
 }
